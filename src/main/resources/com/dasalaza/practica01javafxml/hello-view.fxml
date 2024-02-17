@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.dasalaza.practica01javafxml.HelloController">
+<padding>
+  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+</padding>
+
+<Label fx:id="welcomeText"/>
+<Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
+-->
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="350.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="148.0" layoutY="499.0" mnemonicParsing="false" text="Button">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField layoutX="125.0" layoutY="160.0" />
+      <Label layoutX="172.0" layoutY="105.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
