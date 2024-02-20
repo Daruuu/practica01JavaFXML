@@ -24,7 +24,6 @@
 </VBox>
 -->
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="350.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
@@ -33,10 +32,10 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <TextField layoutX="125.0" layoutY="160.0" />
-      <Label layoutX="172.0" layoutY="105.0" text="Label">
+      <TextField id="input_user" layoutX="126.0" layoutY="175.0" />
+      <Label id="text_label_title" layoutX="74.0" layoutY="118.0" prefHeight="35.0" prefWidth="251.0" text="Escribe el nombre de un color" textAlignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font size="18.0" />
          </font>
       </Label>
    </children>
