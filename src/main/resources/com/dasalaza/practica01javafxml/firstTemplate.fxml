@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.dasalaza.practica01javafxml.FirstAppController">
+    <children>
+
+        <VBox alignment="CENTER" layoutX="112.0" layoutY="141.0" spacing="10"/>
+        <Button fx:id="buttonColor" layoutX="142.0" layoutY="359.0" onAction="#changeCircleColor" prefHeight="25.0"
+                prefWidth="90.0" text="Change color"/>
+        <Circle fx:id="circleColor" fill="DODGERBLUE" layoutX="187.0" layoutY="231.0" radius="62.0" stroke="BLACK"
+                strokeType="INSIDE"/>
+        <TextField fx:id="inputColorStr" layoutX="85.0" layoutY="95.0" prefHeight="25.0" prefWidth="204.0"
+                   promptText="Introduce the color">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+    </children>
+
+</AnchorPane>
