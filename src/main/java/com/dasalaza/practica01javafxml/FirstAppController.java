@@ -35,23 +35,36 @@ public class FirstAppController extends Application {
         launch();
     }
 
-    public void gestionErrores(Color colorStr){
-        if (colorStr == null || inputColorStr.getText().isEmpty())
-        {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error!");
-            alert.setHeaderText(null);
-            alert.setContentText("Introduce a color valid name!");
-            alert.showAndWait();
-        }
+    public void errorHandlingInput(){
+        if (inputColorStr.getText().isEmpty() || inputColorStr.getText().isEmpty())
+            showAlert("Please enter a valid color name" );
+        else if (!isHexadecimal(inputColorStr.toString()))
+            showAlert("Invalid hexadecimal color!");
     }
 
     public void changeCircleColor() {
-        String colorStr = inputColorStr.getText().toLowerCase();
-        Color color = Color.web(colorStr);
-        gestionErrores(color);
+        Color color = null;
 
-        if (color != null)
+        if (!inputColorStr.getText().isEmpty())
+            color = Color.web(inputColorStr.getText());
+
+        errorHandlingInput();
+
+        if (inputColorStr.getText() != null)
             circleColor.setFill(color);
+    }
+
+    private void showAlert(String message)
+    {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error!");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+    private boolean isHexadecimal(String inputStr)
+    {
+        return inputStr.matches("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$");
     }
 }
